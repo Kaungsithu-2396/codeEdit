@@ -151,9 +151,9 @@ nav {
     font-family: "myriad-r", cursive;
     color: white;
     font-size: 22px;
-    display: none;
+    /* display: none; */
     padding: 30px;
-    /* opacity: 0; */
+    opacity: 0;
     background-color: rgba(255, 255, 255, 0.14);
     border-radius: 10px;
     transition: 1s;
