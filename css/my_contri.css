@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #489ECB;
+}
+
+/* Nav Bar =========================*/
+nav {
+    padding: 0;
+}
+
+.nav-link {
+    font-family: "blox", cursive;
+    font-size: 2em;
+    margin: 0 1.5em;
+    color: white;
+}
+
+/* Media query for phones and tablets */
+@media (max-width: 1199.98px) {
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .nav-link {
+        font-size: 1.8em;
+    }
+
+
+
+    /* Media query for phones */
+    @media (max-width: 767.98px) {
+        .nav-link {
+            font-size: 1em;
+            margin: 0 0.5em;
+        }
+    }
+}
+
+/* Landing ===========================*/
+.landing {
+    padding: 7rem 0;
+    overflow-x: hidden;
+}
+
+.globe-div {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.globe {
+    max-width: 100%;
+    height: auto;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+}
+
+#ltext {
+    width: 80%;
+
+}
+
+#ltext p {
+    color: white;
+    background-color: rgba(255,255,255,0.14);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-family: "myriad-r";
+    font-size: 24px;
+    text-align: justify;
+}
+
+/* Energy  ==========================*/
+.energy-sec {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden ;
+}
+
+.energy {
+    display: grid;
+    width: 90vw;
+    grid-template-columns: 1.2fr 1.2fr 0.15fr;
+    grid-template-areas: "wind solar category";
+    grid-gap: 2rem;
+    margin: 20px 0;
+}
+
+.wind,
+.solar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.14);
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.wind {
+    grid-area : wind;
+}
+
+.solar {
+    grid-area: solar;
+}
+
+.wind img,
+.solar img{
+    padding: 2rem 2rem 0 2rem;
+}
+
+.wind p,
+.solar p {
+    margin: 5px 50px;
+    text-align: justify;
+}
+
+.energy-sec .h1 {
+    font-family: "makuton",cursive;
+    color: white;
+    padding: 1rem;
+    margin: 0;
+}
+
+.etext {
+    font-size: "myriad-r",cursive;
+    color: white;
+    font-size: 22px;
+}
+
+.category p{
+    font-family: "makuton",cursive;
+    font-size: 3em;
+    color: #489ECB;
+    text-align: center;
+    padding: 10px 25px;
+    line-height: 130%;
+}
+
+.category {
+    background-color: rgba(255,255,255,0.6);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    grid-area: category;
+
+}
+
+.myBtn {
+    font-family: "myriad-r",cursive;
+    color: white;
+    background-color: rgba(255,255,255,0.19);
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin: 20px 0;
+}
+
+/* Public Transport ========================*/
+.transport-sec {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.transport {
+    display: grid;
+    width: 90vw;
+    grid-template-columns: 0.15fr 1.2fr 1.2fr;
+    grid-template-rows: 1fr 0.2fr;
+    grid-template-areas: "category train bus" "category ttext ttext" ;
+    grid-gap: 2rem;
+    margin: 20px 0;
+}
+
+.train,
+.bus {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.14);
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.train {
+    grid-area : train;
+}
+
+.bus {
+    grid-area: bus;
+}
+
+.train img,
+.bus img{
+    padding: 2rem 2rem 0 2rem;
+}
+
+.train p,
+.bus p {
+    margin: 5px 50px;
+    text-align: justify;
+}
+
+.transport-sec .h1 {
+    font-family: "makuton",cursive;
+    color: white;
+    padding: 1rem;
+}
+
+#ttext {
+    grid-area : ttext;
+    font-size: "myriad-r",cursive;
+    color: white;
+    font-size: 22px;
+    padding: 0 30px;
+    background-color: rgba(255,255,255,0.14);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#ttext p{
+    margin: 0;
+    text-align: justify;
+}
+
+.category p{
+    font-family: "makuton",cursive;
+    font-size: 3em;
+    color: #489ECB;
+    text-align: center;
+    padding: 10px 25px;
+    line-height: 130%;
+}
+
+.category {
+    background-color: rgba(255,255,255,0.6);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    grid-area: category;
+}
+
+/* 3R */
+.r3-sec {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.r3 {
+    display: grid;
+    width: 90vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.6fr 0.6fr 0.6fr;
+    grid-template-areas: 
+    "coin coin coin"
+    "text1 text1 h11" 
+    "h12 text2 text2" /* Replace "text2 text2" with "h12 text2 text2" */
+    "text3 text3 h13"; /* Replace "text3" with "h13" */
+    grid-gap: 2rem;
+    margin: 20px 0;
+}
+
+.coin {
+    grid-area: coin;
+}
+
+#text1 {
+    grid-area: text1;
+}
+
+#text2 {
+    grid-area: text2;
+}
+
+#text3 {
+    grid-area: text3; /
+}
+
+#h11 {
+    grid-area: h11;
+}
+
+#h12 {
+    grid-area: h12;
+}
+
+#h13 {
+    grid-area: h13;
+}
+
+.rtext {
+    font-size: "myriad-r",cursive;
+    color: white;
+    font-size: 22px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.categoryR {
+    font-family: "makuton",cursive;
+    font-size: 3em;
+    color: #489ECB;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.r3 .h1 {
+    padding: 1rem 4.5rem;
+    background-color: rgba(255,255,255,0.59);
+    border-radius: 10px;
+}
+
+.coin {
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: makuton;
+    src: url(../fonts/Makuton.ttf);
+}
+
+@font-face {
+    font-family: blox;
+    src: url(../fonts/OT04_Blox-Regular.ttf);
+}
+
+@font-face {
+    font-family: myriad-r;
+    src: url(../fonts/MYRIADPRO-REGULAR.OTF) format('opentype');
+}
+
+@font-face {
+    font-family: myriad-sb;
+    src: url(../fonts/MYRIADPRO-SEMIBOLD.OTF) format('opentype');
+}
